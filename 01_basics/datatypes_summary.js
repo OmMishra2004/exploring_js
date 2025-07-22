@@ -23,20 +23,20 @@ functions// type of function return function but function is an object function
 are some examples
 */
 
-// symbols
-let id1=Symbol("123")
-let id2=Symbol("123")
-console.log(id1==id2)// the output will be false because we used symbol datatype therefore id1 and id2 are unique with respect to each other eventhough the may hold the same value
+// // symbols
+// let id1=Symbol("123")
+// let id2=Symbol("123")
+// console.log(id1==id2)// the output will be false because we used symbol datatype therefore id1 and id2 are unique with respect to each other eventhough the may hold the same value
 
-let arr=["Om","shiv"]
-let obj={
-    name:"om",
-    age:20
-}
-const myfunc= function(){
-    console.log("jai shree ram")
-}
-console.table([typeof arr,typeof obj,typeof myfunc,typeof id1])
+// let arr=["Om","shiv"]
+// let obj={
+//     name:"om",
+//     age:20
+// }
+// const myfunc= function(){
+//     console.log("jai shree ram")
+// }
+// console.table([typeof arr,typeof obj,typeof myfunc,typeof id1])
 
 //You can identify a BigInt by appending n to an integer literal (e.g., 123n) or by using the BigInt() constructor (e.g., BigInt("123")). The typeof operator will return "bigint" for a BigInt value.
 
@@ -54,3 +54,29 @@ console.table([typeof arr,typeof obj,typeof myfunc,typeof id1])
        Arrays  =>  object
        Function  =>  function
        Object  =>  object*/
+
+//****************************************************************************************************
+
+
+
+// Memory concept 
+// memory in js is of two types stack memory and heap memory
+
+
+
+//1) Stack memory
+/*=> all the primitve data types use stack memory
+=> stack memory work on the concept of call by value
+ */
+
+// let num1=20
+// let num2=num1
+// console.log("before changing","num1 = ",num1,"num2 = ",num2)
+// num2=30
+// console.log("after changing","num1 = ",num1,"num2 = ",num2)
+
+// let arr1=[10,20,30]
+// let arr2=arr1
+// console.log("before changing","arr1 = ",arr1,"arr2 = ",arr2)
+// arr2[0]=50
+// console.log("after changing","arr1 = ",arr1,"arr2 = ",arr2)
