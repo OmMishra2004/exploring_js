@@ -2,7 +2,7 @@ const myobj={1:"a",2:"b",3:"c"}
 // for objects we use forin loop
 // for in loop gives keys
 for (const key in myobj) {
-  //  console.log(`key =${key}, value =${myobj[key]}`)
+   //console.log(`key =${key}, value =${myobj[key]}`)
 }
 
 //for in loop on arrays gives the keys of array and keys of array are the indexes of the array
