@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom learning</title>
+    <style>
+        *{
+            background-color: #212121;
+            color: white;
+        }
+        .test{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="bg_black">
-        <h1 class="heading">DOM learning and js</h1>
+        <h1 id="title" class="heading">
+            DOM learning and js
+            <span class="test">span text</span>
+        </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, repellendus!</p>
     </div>
 </body>
 </html> 
+<!-- document.getElementById("title")
+<h1 id=​"title" class=​"heading">​DOM learning and js​</h1>​
+document.getElementById("title").id
+'title'
+document.getElementById("title").className
+'heading'
+document.getElementById("title").getAttribute("id")
+'title'
+document.getElementById("title").getAttribute("class")
+'heading 
+document.getElementById("title").setAttribute("class","heading test")// this will always overwrtie the value within the attribute
+
+const title=document.getElementById("title")
+undefined
+title.style.backgroundColor="gray"
+'gray'
+title.style.border="2px solid white"
+'2px solid white'
+
+
+title.innerText
+'DOM learning and js'
+title.textContent
+'\n            DOM learning and js\n            span text\n        '
+title.innerHTML
+
+-->
