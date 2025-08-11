@@ -20,7 +20,15 @@
             DOM learning and js
             <span class="test">span text</span>
         </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, repellendus!</p>
+        <ul>
+            <li class="listItem">one</li>
+            <li class="listItem">two</li>
+            <li class="listItem">three</li>
+        </ul>
     </div>
 </body>
 </html> 
@@ -50,4 +58,47 @@ title.textContent
 '\n            DOM learning and js\n            span text\n        '
 title.innerHTML
 
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit amet.​</h2>​
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+const myul=document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li>​…​</li>​::marker​"one"</li>​
+myul.querySelector('li').style.backgroundColor="red"
+'red'
+
+const temp=document.querySelectorAll('li')
+undefined
+temp
+NodeList(3) [li, li, li]
+temp[1].style.backgroundColor="darkgreen"
+'darkgreen'
+
+const myh1= document.querySelectorAll('h1')
+undefined
+myh1
+NodeList [h1#title.heading]0: h1#title.headinglength: 1[[Prototype]]: NodeList
+myh1[0].style.backgroundColor="yellow"
+'yellow'
+
+
+const list=document.getElementsByClassName('listItem')
+undefined
+list
+HTMLCollection(3) [li.listItem, li.listItem, li.listItem]
+Array.from(list)
+(3) [li.listItem, li.listItem, li.listItem]0: li.listItem1: li.listItem2: li.listItemlength: 3[[Prototype]]: Array(0)
+const myarr=Array.from(list)
+undefined
+myarr.forEach((li)=>{console.log(li)})
+VM1613:1 <li class=​"listItem">​…​</li>​::marker​"one"</li>​
+VM1613:1 <li class=​"listItem">​…​</li>​
+VM1613:1 <li class=​"listItem">​…​</li>​
+undefined
 -->
