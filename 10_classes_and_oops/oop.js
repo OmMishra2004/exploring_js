@@ -6,7 +6,7 @@ const user = {
     getUserDetails: function(){
         //console.log("Got user details from database");
         // console.log(`Username: ${this.username}`);
-        console.log(this);
+        // console.log(this);
     }
 
 }
@@ -33,5 +33,6 @@ function User(username, loginCount, isLoggedIn){
 
 const userOne = new User("hitesh", 12, true)
 const userTwo = new User("ChaiAurCode", 11, false)
+console.log(userOne)
 console.log(userOne.constructor);
 //console.log(userTwo);
